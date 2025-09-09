@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [PracticeSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="APIKEY/username" value="12345"/>
+  <parameter name="URL" value="qaclickacadeemy.com"/>
+  <test thread-count="2" parallel="classes" name="PracticeTest(failed)">
+    <classes>
+      <class name="TestNg.Practice_One">
+        <methods>
+          <include name="BFSuite"/>
+          <include name="Demo"/>
+        </methods>
+      </class> <!-- TestNg.Practice_One -->
+    </classes>
+  </test> <!-- PracticeTest(failed) -->
+</suite> <!-- Failed suite [PracticeSuite] -->

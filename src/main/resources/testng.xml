@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="PracticeSuite" parallel="classes" thread-count="2">
+<Listeners>
+<Listener class-name="TestNg.Practice_Four"/>
+</Listeners>
+
+   <parameter name="URL" value="qaclickacadeemy.com"/>
+   <parameter name="APIKEY/username" value="12345"/>
+    <test name="PracticeTest">
+    
+        <classes>
+           <class name="TestNg.Practice_One"/>
+            <class name="TestNg.Practice_Two"/>
+           <class name="TestNg.Practice_Three"/>
+        </classes>
+        
+    </test>
+</suite>
+
