@@ -12,6 +12,8 @@ public class DataType_Variable {
         	if(n%2==0)
         	{
         		System.out.println(n);
+        		System.out.println("Hammad Ashfaq");
+        		
         	}
         }
         
