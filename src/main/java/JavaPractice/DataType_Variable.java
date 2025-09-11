@@ -7,15 +7,36 @@ public class DataType_Variable {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	   
-        for(int n=1;n<=100;n++)
-        {
-        	if(n%2==0)
-        	{
-        		System.out.println(n);
-        		System.out.println("Hammad Ashfaq");
-        		
-        	}
-        }
+     int n=29;
+     boolean Isprime=true;
+     if(n<=1)
+     {
+    	 Isprime=false;
+     }
+     else if(n>2 && n%2==0)
+     {
+    	 Isprime=false;
+     }
+     else
+     {
+    	 for(int i=3;i*i<=n;i=i+2)
+    	 {
+    		 if(n%i==0)
+    		 {
+    			 Isprime=false;
+    			 break;
+    		 }
+    	 }
+     }
+     if(Isprime==true)
+     {
+    	 System.out.println(n + " Is Prime Number");
+     }
+     else
+     {
+    	 System.out.println(n + " Is not Prime Number");
+     }
+     
         
      
 	}
