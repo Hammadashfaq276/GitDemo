@@ -7,16 +7,25 @@ public class DataType_Variable {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	   
-      int a=0,b=1,c;
-      int n=10;
-      System.out.print(a + " " +  b);
-      for(int i=2;i<=n;i++)
-      {
-    	  c=a+b;
-    	  a=b;
-    	  b=c;
-    	  System.out.print(" "+ c);
-      }
+        int num=123;
+        int temp=num;
+        int rev=0;
+        while(temp>0)
+        {
+        	int last=temp % 10;
+        	rev=(rev*10)+last;
+        	temp=temp/10;
+        }
+        
+        if(num==rev)
+        {
+        	System.out.println(num + " Is Palindrome Number");
+        }
+        else
+        {
+        	System.out.println(num + " Is not Palindrome Number");
+        }
+        
         
      
 	}
