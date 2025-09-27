@@ -7,16 +7,29 @@ public class DataType_Variable {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	   
-      int n=10;
-      for(int i=1;i<=10;i++)
-      {
-    	  for(int j=1;j<=n;j++)
-    	  {
-    		  System.out.print(i*j + " ");
-    	  }
-    	  System.out.println();
-      }
-      
+    int [] array = {1, 2, 3, 2, 4, 1, 5, 3, 6};
+    for(int i=0;i<array.length;i++)
+    {
+    	System.out.println("Original Array=" + array[i]);
+    }
+   
+    for(int i=0;i<array.length;i++)
+    {
+    	boolean IsUnique=true;
+    	for(int j=0;j<i;j++)
+    	{
+    		if(array[i]==array[j])
+    		{
+    			IsUnique=false;
+    			break;
+    		}
+    	}
+    	if(IsUnique==true)
+    	{
+    		System.out.println("Unique Element" + array[i]);
+    	}
+    	
+    }
         
      
 	}
